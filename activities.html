@@ -47,6 +47,7 @@
 									<!-- Begin Toggle -->
 									<div class="toggle">
 										<h2 class="trigger" class="center">[+] First Workshop on Brain Computation (January 9-13, 2017)</h2>
+										<br class="togglebox">
 										<div class="togglebox">
 											<div>
 												<h3><u>First Workshop on Brain, Computation, and Learning</u></h3>
@@ -127,6 +128,7 @@
 
 									<div class="toggle">
 										<h2 class="trigger" class="center">[+] Symposium on Neuromorphic Cognitive Computing (October 4, 2017)</h2>
+										<br class="togglebox">
 										<div class="togglebox">
 											<div>
 												<h3><u>Symposium on Neuromorphic Cognitive Computing</u></h3>
@@ -168,6 +170,7 @@
 
 									<div class="toggle">
 										<h2 class="trigger" class="center">[+] Compact Course (December 2017)</h2>
+										<br class="togglebox">
 										<div class="togglebox">
 											<div>
 												<h3>Compact Course on MRI Physics</h3>
@@ -182,6 +185,7 @@
 									</div>
 									<div class="toggle">
 										<h2 class="trigger" class="center">[+] BCL 2018</h2>
+										<br class="togglebox">
 										<div class="togglebox">
 											<div>
 												<h3><u>Activities Planned for 2018:</u></h3>
@@ -245,11 +249,11 @@
 
 		<script>
             $(document).ready(function () {
-                $(".trigger").click(function (){
+                $(".trigger").on('click',function (){
+                    // alert('hello');
                     $(this).siblings(".togglebox").toggle();
                 });
             });
-
 		</script>
 
 	</body>
