@@ -42,7 +42,7 @@
 						<!--<div id="wrapper">-->
 						<div class="content">
 							<div class="toggle">
-								<h2 class="trigger" class="center">1. Pratiksha Trust Young Investigators</h2>
+								<h2 class="trigger" class="center">[+] Pratiksha Trust Young Investigators</h2>
 								<div class="togglebox">
 									<div>
 										<p>
@@ -98,7 +98,7 @@
 								</div>
 							</div>
 							<div class="toggle">
-								<h2 class="trigger" class="center">2. Pratiksha Initiatives</h2>
+								<h2 class="trigger" class="center">[+] Pratiksha Initiatives</h2>
 								<div class="togglebox">
 									<div class="one-half">
 										<a href="pratiksha-projects.pdf" class="button light-brown" target="_blank"><b>Pratiksha Projects</b><span></span></a>
@@ -156,9 +156,12 @@
 			<script src="assets/js/main.js"></script>
 
 		<script>
-            $(".trigger").click(function (){
-                $(this).siblings(".togglebox").toggle();
+			$(document).ready(function () {
+                $(".trigger").click(function (){
+                    $(this).siblings(".togglebox").toggle();
+                });
             });
+
 		</script>
 
 	</body>
