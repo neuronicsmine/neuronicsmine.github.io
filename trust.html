@@ -101,15 +101,53 @@
 								<h2 class="trigger" class="center"><a style="cursor: pointer;">[+]</a> Pratiksha Initiatives</h2>
 								<div class="togglebox">
 									<div class="one-half">
-										<a href="pratiksha-projects.pdf" class="button light-brown" target="_blank"><b>Pratiksha Projects</b><span></span></a>
-										<!--<br />-->
-										<!--<br />-->
-										<a href="travel.pdf" class="button light-brown" target="_blank"><b>Pratiksha Travel Fellowships</b><span></span></a>
-										<!--<br />-->
-										<!--<br />-->
-										<a href="pratiksha-postdoctoral-fellowship.pdf" class="button light-brown" target="_blank"><b>Pratiksha Postdoctoral Fellowship</b><span></span></a>
-										<!--<br />-->
-										<!--<br />-->
+										<ul>
+											<!--<li><h5>Pratiksha Projects</h5>-->
+											<!--<div>-->
+												<!--Pratiksha Trust has made a generous endowment to IISc towards supporting research in-->
+													<!--the general areas of Electrical, Electronics and Computer Sciences having broad-->
+													<!--relevance to brain research, data science, machine learning, or neuromorphic-->
+													<!--computing. Under this initiative, there are funds available-->
+													<!--to support small exploratory projects. Project proposals are invited from faculty of IISc as per the-->
+													<!--guidelines given below.<br>-->
+												<!--<a href="pratiksha-projects.pdf" class="button trigger" target="_blank"><b>More Info</b></a>-->
+											<!--</div>-->
+											<!--</li>-->
+											<li><h5>Pratiksha Travel Fellowships</h5>
+											<div>
+												Pratiksha Trust has made a generous endowment to IISc towards supporting
+													research in the general areas of Electrical, Electronics and Computer Sciences
+													having broad relevance to brain research, data science, machine learning, or
+													neuromorphic computing. Under this initiative, funds are available to support travel of students, postdoctoral fellows, and young faculty members
+													for participation in top-tier international conferences and workshops. Each
+													travel fellowship would be up to Rs. 1.0 lakh and can be used for expenses
+													towards travel and registration fees. In an year there would
+													be about fifteen
+													such travel fellowships available for students and young faculty members of
+													IISc. The details regarding these travel fellowships are given below.<br>
+												<a href="travel.pdf" class="button trigger" target="_blank"><b>More Info</b></a>
+											</div></li>
+											<br>
+											<li><h5>Pratiksha Postdoctoral Fellowship</h5>
+												<div>
+													The Indian Institute of Science (IISc) invites applications for
+														Pratiksha Postdoctoral Fellowship. This  fellowship  is  supported  by  an  endowment  by  Pratiksha  Trust  set  up  by  Mr.
+														Kris Gopalakrishnan and Mrs.  Sudha Gopalakrishnan.  The main objective of the fellowship is
+														to promote interdisciplinary research that interfaces computer science with neurobiology.<br>
+													<a href="pratiksha-postdoctoral-fellowship.pdf" class="button trigger" target="_blank"><b>More Info</b></a>
+												</div>
+											</li>
+										</ul>
+										<!--<a class="button light-brown trigger" target="_blank"><b>Pratiksha Projects</b><span></span></a>-->
+
+										<!--&lt;!&ndash;<br />&ndash;&gt;-->
+										<!--&lt;!&ndash;<br />&ndash;&gt;-->
+										<!--<a href="travel.pdf" class="button light-brown" target="_blank"><b>Pratiksha Travel Fellowships</b><span></span></a>-->
+										<!--&lt;!&ndash;<br />&ndash;&gt;-->
+										<!--&lt;!&ndash;<br />&ndash;&gt;-->
+										<!--<a href="pratiksha-postdoctoral-fellowship.pdf" class="button light-brown" target="_blank"><b>Pratiksha Postdoctoral Fellowship</b><span></span></a>-->
+										<!--&lt;!&ndash;<br />&ndash;&gt;-->
+										<!--&lt;!&ndash;<br />&ndash;&gt;-->
 									</div>
 								</div>
 							</div>
@@ -158,6 +196,9 @@
 		<script>
 			$(document).ready(function () {
                 $("h2.trigger").click(function (){
+                    $(this).siblings(".togglebox").toggle();
+                });
+                $("a.trigger").click(function (){
                     $(this).siblings(".togglebox").toggle();
                 });
             });
