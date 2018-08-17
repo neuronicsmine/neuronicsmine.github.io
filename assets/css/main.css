@@ -2518,7 +2518,10 @@ input, select, textarea {
 
 			#header .logo p {
 				display: inline;
+				text-align: center;
+				text-transform: none;
 				color: #C1CAC5;
+				/*padding-left: 160px;*/
 			}
 
 /* Nav */
