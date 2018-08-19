@@ -10,8 +10,8 @@ jQuery.fn.wowSlider = function (d) {
     d = e.extend({
         prev: "",
         next: "",
-        duration: 1000,
-        delay: 20 * 100,
+        duration: 5000,
+        delay: 50 * 100,
         width: 960,
         height: 360,
         controls: true,
